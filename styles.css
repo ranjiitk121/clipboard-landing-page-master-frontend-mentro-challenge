@@ -1,218 +1,254 @@
 :root {
-    box-sizing: border-box;
-    --teal-1: #26BBA4;
-    --light-blue: hsl(233, 100%, 69%);
+  box-sizing: border-box;
+  --teal-1: #26bba4;
+  --light-blue: hsl(233, 100%, 69%);
 }
 
-*, *::after, *::before {
-    box-sizing: inherit;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Bai Jamjuree';
+  padding: 0;
+  margin: 0;
+  font-family: 'Bai Jamjuree';
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .hero {
-    background-image: url('./images//bg-header-mobile.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 4rem;
+  background-image: url('./images//bg-header-mobile.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 4rem;
 }
 
 .container {
-    max-width: 1440px;
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
+  max-width: 1440px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .row {
-    display: flex;
+  display: flex;
 }
 
 .section:not(:last-child) {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .hero > .row {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
 
 .title {
-    color: rgba(0, 0, 0, 0.7);
-    font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
 }
 
-.hero__text .title{
-    font-size: 2rem;
+.hero__text .title {
+  font-size: 2rem;
 }
 
 .sub-text {
-    color: rgba(0, 0, 0, 0.322);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.4;
+  color: rgba(0, 0, 0, 0.322);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .hero .cta-container {
-    flex-direction: column;
-    margin: 1.3rem 0 3.3rem 0;
+  flex-direction: column;
+  margin: 1.3rem 0 3.3rem 0;
 }
 
 .cta-container__button {
-    background-color: var(--teal-1);
-    color: white;
-    border: none;
-    padding: 0.8rem 2.2rem;
-    border-radius: 4rem;
-    font-size: 1.1rem;
+  background-color: var(--teal-1);
+  color: white;
+  border: none;
+  padding: 0.8rem 2.2rem;
+  border-radius: 4rem;
+  font-size: 1.1rem;
 }
 
 .cta-container__button:not(:last-child) {
-    margin-bottom: 1.3rem;
+  margin-bottom: 1.3rem;
 }
 
 .cta-container__button.mac {
-    background-color: var(--light-blue) ;
+  background-color: var(--light-blue);
 }
-.features, .product-purpose{
-    text-align: center;
+.features,
+.product-purpose {
+  text-align: center;
 }
 
 .feature-category__title {
-    font-size: 1.7rem;
-    font-weight: 500;
+  font-size: 1.7rem;
+  font-weight: 500;
 }
 /* This is really bad practice: I should started the mobile first and not use these selector to
  change flex-direction to column for small screen devices.
 
 */
-.features > .row, .product-purpose > .row {
-    flex-direction: column;
+.features > .row,
+.product-purpose > .row {
+  flex-direction: column;
 }
 
-.features-list p, .features-list h3 {
-    margin: 0;
+.features-list p,
+.features-list h3 {
+  margin: 0;
 }
 
 .features-list > .feature + .feature {
-    margin-top: 1.4rem;
+  margin-top: 1.4rem;
 }
 
 .feature .title {
-    margin-bottom: 0.7rem;
-    font-weight: 500;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
 }
 
 .footer-container {
-    background-color: rgba(249, 246, 246, 0.468);
+  background-color: rgba(249, 246, 246, 0.468);
 }
 
 .footer {
-    padding: 0.7rem 0;
+  padding: 0.7rem 0;
 }
 
 .footer__company-icon {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer__company-icon img {
-    width: 3.5rem;
+  width: 3.5rem;
 }
 
 .customers-list > .customer + .customer {
-    margin-top: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 .download-options .row {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .download-options .text {
-    margin-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .download-options__buttons button {
-    max-width: 40em;
-    margin: auto;
+  max-width: 40em;
+  margin: auto;
 }
-.footer__links_container, .footer__social-media-links-container {
-    list-style: none;
-    text-align: center;
-    padding: 0;
+.footer__links_container,
+.footer__social-media-links-container {
+  list-style: none;
+  text-align: center;
+  padding: 0;
 }
 
 .footer__social-media-links-container {
-    justify-content: space-around;
-    max-width: 70%;
-        margin: 1.5rem auto 0;
+  justify-content: space-around;
+  max-width: 70%;
+  margin: 1.5rem auto 0;
 }
 
 .footer__links_item:not(:last-child) {
-    margin-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
-.footer__links_item a, .social-media-links a {
-    color: rgba(0, 0, 0, 0.492);
-    text-decoration: none;
+.footer__links_item a,
+.social-media-links a {
+  color: rgba(0, 0, 0, 0.492);
+  text-decoration: none;
 }
 
 .social-media-links {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
-@media(min-width: 56.25em) {
-    .hero {
-        background-image: url('./images//bg-header-desktop.png');
-    }
+@media (min-width: 56.25em) {
+  .hero {
+    background-image: url('./images//bg-header-desktop.png');
+  }
 
-    .hero .cta-container {
-        flex-direction: row;
-    }
+  .hero .cta-container {
+    flex-direction: row;
+    gap: 2rem;
+  }
 
-    .cta-container__button:not(:last-child) {
-        margin-bottom: 0;
-        margin-right: 1.5rem;
-    }
+  .cta-container__button:not(:last-child) {
+    margin-bottom: 0;
+  }
 
-    .first-features-container {
-        display: flex;
-        gap: 4rem;
-        margin: 0;
-        align-items: center;
-    }
+  .first-features-container {
+    display: flex;
+    gap: 4rem;
+    margin: 0;
+    align-items: center;
+  }
 
-    .features__macbook-img-container {
-        margin-left: -6.5rem;
-    }
+  .features__macbook-img-container {
+    margin-left: -6.5rem;
+  }
 
-    .first-features-container .feature {
-        max-width: 20rem;
-        text-align: justify;
+  .first-features-container .feature {
+    max-width: 35rem;
+    text-align: justify;
+  }
 
-    }
+  .first-features-container .feature + .feature {
+    margin-top: 3rem;
+  }
 
-    .first-features-container .feature+.feature {
-        margin-top: 3rem;
-    }
+  .second-features-container .features-list {
+    display: flex;
+  }
 
-    .second-features-container .features-list {
-        display: flex;
-    }
+  .second-features-container .features-list > .feature + .feature {
+    margin-top: 0;
+    margin-left: 2rem;
+  }
+  .customers-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .second-features-container .features-list>.feature+.feature {
-        margin-top: 0;
-        margin-left: 2rem;
-    }
+  .customers-list > .customer + .customer {
+    margin-top: 0rem;
+  }
+
+  .download-options .container__button + .container__button {
+    margin-top: 2rem;
+  }
+   
+   .download-options .cta-container__button:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social-media-links .footer__social-media-links-container {
+    gap: 2rem;
+  }
+  .social-media-link {
+    min-width: 3rem;
+  }
 }
